@@ -151,6 +151,36 @@ button:focus-visible {
   transform: translateY(-1px);
 }
 
+/* Filters */
+.todo-filters {
+  display: flex;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--rule);
+}
+
+.todo-filters button {
+  flex: 1;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 7px 8px;
+  cursor: pointer;
+}
+
+.todo-filters button:hover {
+  border-color: var(--ink-soft);
+  color: var(--ink);
+}
+
+.todo-filters button.active {
+  border-color: var(--stamp-green);
+  background: var(--stamp-green);
+  color: var(--paper);
+}
+
 /* List */
 .todo-list {
   list-style: none;
